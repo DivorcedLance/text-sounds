@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Sounds</title>
+    <link rel="icon" type="icon" href="{% static 'text_sounds_icon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Text Sounds Logo -->
+        <div class="text-sounds-logo" id="logo">
+            <img src="{% static 'text-sounds-logo.svg' %}" alt="Logo Image">
+        </div>
+      {% block content %}
+      {% endblock %}
+    </div>
+        
+    <!-- Script -->
+    <script src="{% static 'js/voice.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+
+</html>
